@@ -13,6 +13,10 @@ namespace MyMathsLibrary
             return i + j;
         }
 
+        public int addThreeNos(int i, int j,int k)
+        {
+            return i + j+k;
+        }
 
     }
 }
