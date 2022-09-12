@@ -68,9 +68,17 @@ namespace ReflectionDemo
          
                 object obj = Activator.CreateInstance(t);
 
-                int ans = (int)item.InvokeMember("addThreeNos", BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod, null, obj, new object[3] { 20, 20,20 });
+                //int ans = (int)item.InvokeMember("addThreeNos", BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod, null, obj, new object[3] { 20, 20,20 });
 
-                Console.WriteLine(ans);
+                //             Console.WriteLine(ans);
+                //PropertyInfo ifo=t.GetProperty("empid");
+                //ifo.SetValue("empid", 101);
+                item.InvokeMember("AcceptData", BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod, null, obj, new object[2] {101,"abc" });
+
+                item.InvokeMember("DisplayData", BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod, null, obj, null);
+
+                break;
+
 
 
 

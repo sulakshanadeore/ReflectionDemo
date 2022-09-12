@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace MyMathsLibrary
 {
-    //class Employee
-    //{
+    public class Employee
+    {
 
-    //   public static  void AcceptData()
-    //    { 
+        public int empid { get; set; }
+        public string ename { get; set; }
+        public  void AcceptData(int employeeid,string employeename)
+        {
+            empid = employeeid;
+            ename = employeename;
+
+        }
+        public void DisplayData()
+        {
+            Console.WriteLine(empid);
+            Console.WriteLine(ename);
         
-    //    }
-    //}
+        }
+
+    }
 }
