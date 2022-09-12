@@ -46,6 +46,7 @@ namespace ReflectionDemo
 
                     ParameterInfo[] pinfo=methodInfosItem.GetParameters();
                     Console.WriteLine("---Add method Parameters----");
+
                     if (methodInfosItem.Name=="add")
                     {
                         foreach (var par in pinfo)
